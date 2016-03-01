@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C61BAAB1496AD44E2969C544 /* Pods_GRDBUsage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AD27460D5FC9ACDD51F81 /* Pods_GRDBUsage.framework */; };
+		FB0C35581C858749004062BD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C35571C858749004062BD /* Person.swift */; };
+		FB0C355B1C858AA5004062BD /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C355A1C858AA5004062BD /* Database.swift */; };
+		FB0C35601C858E4B004062BD /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C355F1C858E4B004062BD /* MainTableViewController.swift */; };
+		FB0C35621C858EEE004062BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C35611C858EEE004062BD /* DetailViewController.swift */; };
+		FB0C35641C858EFF004062BD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C35631C858EFF004062BD /* AddViewController.swift */; };
+		FB41F51E1C85811A004B0E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB41F51D1C85811A004B0E94 /* AppDelegate.swift */; };
+		FB41F5231C85811A004B0E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB41F5211C85811A004B0E94 /* Main.storyboard */; };
+		FB41F5251C85811A004B0E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB41F5241C85811A004B0E94 /* Assets.xcassets */; };
+		FB41F5281C85811A004B0E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB41F5261C85811A004B0E94 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		118AD27460D5FC9ACDD51F81 /* Pods_GRDBUsage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRDBUsage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		411D028BBD13EE2124EB9505 /* Pods-GRDBUsage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRDBUsage.release.xcconfig"; path = "Pods/Target Support Files/Pods-GRDBUsage/Pods-GRDBUsage.release.xcconfig"; sourceTree = "<group>"; };
+		D9F79C49E15E7ABC049565D4 /* Pods-GRDBUsage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRDBUsage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GRDBUsage/Pods-GRDBUsage.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0C35571C858749004062BD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FB0C355A1C858AA5004062BD /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		FB0C355F1C858E4B004062BD /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		FB0C35611C858EEE004062BD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FB0C35631C858EFF004062BD /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		FB41F51A1C85811A004B0E94 /* GRDBUsage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRDBUsage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB41F51D1C85811A004B0E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB41F5221C85811A004B0E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB41F5241C85811A004B0E94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB41F5271C85811A004B0E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB41F5291C85811A004B0E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB41F5171C85811A004B0E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61BAAB1496AD44E2969C544 /* Pods_GRDBUsage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02FA101FF3EEED1145F090B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118AD27460D5FC9ACDD51F81 /* Pods_GRDBUsage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17A2AA6B6899CA8BD183A3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9F79C49E15E7ABC049565D4 /* Pods-GRDBUsage.debug.xcconfig */,
+				411D028BBD13EE2124EB9505 /* Pods-GRDBUsage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB0C35561C858729004062BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C35571C858749004062BD /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB0C35591C858A84004062BD /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C355A1C858AA5004062BD /* Database.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		FB0C355C1C858E08004062BD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C355F1C858E4B004062BD /* MainTableViewController.swift */,
+				FB0C35611C858EEE004062BD /* DetailViewController.swift */,
+				FB0C35631C858EFF004062BD /* AddViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB41F5111C85811A004B0E94 = {
+			isa = PBXGroup;
+			children = (
+				FB41F51C1C85811A004B0E94 /* GRDBUsage */,
+				FB41F51B1C85811A004B0E94 /* Products */,
+				17A2AA6B6899CA8BD183A3C1 /* Pods */,
+				02FA101FF3EEED1145F090B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB41F51B1C85811A004B0E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB41F51A1C85811A004B0E94 /* GRDBUsage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB41F51C1C85811A004B0E94 /* GRDBUsage */ = {
+			isa = PBXGroup;
+			children = (
+				FB41F51D1C85811A004B0E94 /* AppDelegate.swift */,
+				FB41F5211C85811A004B0E94 /* Main.storyboard */,
+				FB0C355C1C858E08004062BD /* ViewControllers */,
+				FB0C35591C858A84004062BD /* DB */,
+				FB0C35561C858729004062BD /* Models */,
+				FB41F52F1C858146004B0E94 /* Resources */,
+			);
+			path = GRDBUsage;
+			sourceTree = "<group>";
+		};
+		FB41F52F1C858146004B0E94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB41F5241C85811A004B0E94 /* Assets.xcassets */,
+				FB41F5261C85811A004B0E94 /* LaunchScreen.storyboard */,
+				FB41F5291C85811A004B0E94 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB41F5191C85811A004B0E94 /* GRDBUsage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB41F52C1C85811A004B0E94 /* Build configuration list for PBXNativeTarget "GRDBUsage" */;
+			buildPhases = (
+				A2F56DEDF02CFF1AFBD6A0E2 /* Check Pods Manifest.lock */,
+				FB41F5161C85811A004B0E94 /* Sources */,
+				FB41F5171C85811A004B0E94 /* Frameworks */,
+				FB41F5181C85811A004B0E94 /* Resources */,
+				E804F79ADB006CD179A97A6C /* Embed Pods Frameworks */,
+				A4A3F26159557E21DB7AF7FB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRDBUsage;
+			productName = GRDBUsage;
+			productReference = FB41F51A1C85811A004B0E94 /* GRDBUsage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB41F5121C85811A004B0E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zx;
+				TargetAttributes = {
+					FB41F5191C85811A004B0E94 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = FB41F5151C85811A004B0E94 /* Build configuration list for PBXProject "GRDBUsage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB41F5111C85811A004B0E94;
+			productRefGroup = FB41F51B1C85811A004B0E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB41F5191C85811A004B0E94 /* GRDBUsage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB41F5181C85811A004B0E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB41F5281C85811A004B0E94 /* LaunchScreen.storyboard in Resources */,
+				FB41F5251C85811A004B0E94 /* Assets.xcassets in Resources */,
+				FB41F5231C85811A004B0E94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2F56DEDF02CFF1AFBD6A0E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A3F26159557E21DB7AF7FB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GRDBUsage/Pods-GRDBUsage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E804F79ADB006CD179A97A6C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GRDBUsage/Pods-GRDBUsage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB41F5161C85811A004B0E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0C35601C858E4B004062BD /* MainTableViewController.swift in Sources */,
+				FB0C35581C858749004062BD /* Person.swift in Sources */,
+				FB0C35641C858EFF004062BD /* AddViewController.swift in Sources */,
+				FB0C35621C858EEE004062BD /* DetailViewController.swift in Sources */,
+				FB0C355B1C858AA5004062BD /* Database.swift in Sources */,
+				FB41F51E1C85811A004B0E94 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB41F5211C85811A004B0E94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB41F5221C85811A004B0E94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB41F5261C85811A004B0E94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB41F5271C85811A004B0E94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB41F52A1C85811A004B0E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB41F52B1C85811A004B0E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB41F52D1C85811A004B0E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F79C49E15E7ABC049565D4 /* Pods-GRDBUsage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GRDBUsage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = z2xy.GRDBUsage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB41F52E1C85811A004B0E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411D028BBD13EE2124EB9505 /* Pods-GRDBUsage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GRDBUsage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = z2xy.GRDBUsage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB41F5151C85811A004B0E94 /* Build configuration list for PBXProject "GRDBUsage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB41F52A1C85811A004B0E94 /* Debug */,
+				FB41F52B1C85811A004B0E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB41F52C1C85811A004B0E94 /* Build configuration list for PBXNativeTarget "GRDBUsage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB41F52D1C85811A004B0E94 /* Debug */,
+				FB41F52E1C85811A004B0E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB41F5121C85811A004B0E94 /* Project object */;
+}
