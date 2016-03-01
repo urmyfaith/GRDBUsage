@@ -13,16 +13,24 @@ class AddViewController: UITableViewController {
     @IBOutlet weak var firstNameTextFiled: UITextField!
     @IBOutlet weak var lastNameTextFiled: UITextField!
 
+    var person: Person = Person(firstName: "", lastName: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
-    @IBAction func saveTap(sender: UIBarButtonItem) {
 
+    func textFieldDidEndEditing(textField: UITextField) {
+        if textField == firstNameTextFiled {
+            person.firstName = textField.text
+        } else if textField == lastNameTextFiled {
+            person.lastName = textField.text
+        }
+    }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        person.firstName = firstNameTextFiled.text
+        person.lastName = lastNameTextFiled.text
     }
 
 }

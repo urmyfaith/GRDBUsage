@@ -8,14 +8,21 @@
 
 import GRDB
 
-var dbDueue: DatabaseQueue!
+struct Col {
+    static let id = SQLColumn("id")
+    static let firstName = SQLColumn("firstName")
+    static let lastName = SQLColumn("lastName")
+}
+
+
+var dbQueue: DatabaseQueue!
 
 func setupDataBase() {
 
     //创建DBQueue
     let documentPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first! as NSString
     let databasePath = documentPath.stringByAppendingPathComponent("db.sqlite")
-    dbDueue = try! DatabaseQueue(path: databasePath)
+    dbQueue = try! DatabaseQueue(path: databasePath)
 
 
     //整理下数据库.
@@ -23,7 +30,7 @@ func setupDataBase() {
         return (lhs as NSString).localizedCaseInsensitiveCompare(rhs)
     }
 
-    dbDueue.inDatabase { (db) -> Void in
+    dbQueue.inDatabase { (db) -> Void in
         db.addCollation(collation)
     }
 
@@ -31,6 +38,11 @@ func setupDataBase() {
     var migrator = DatabaseMigrator()
     migrator.registerMigration("createPersons") { (db) -> Void in
         try db.execute(
+//            "CREATE TABLE persons (" +
+//                "id INTEGER PRIMARY KEY, " +
+//                "firstName TEXT COLLATE localized_case_insensitive, " +
+//                "lastName TEXT COLLATE localized_case_insensitive" +
+//            ")"
             "CREATE TABLE persons (" +
                 "id INTEGER PRIMARY KEY, " +
                 "firstName TEXT COLLATE localized_case_insensitive, " +
@@ -44,5 +56,5 @@ func setupDataBase() {
         try Person(firstName: "Cinderella").insert(db)
     }
 
-    try! migrator.migrate(dbDueue)
+    try! migrator.migrate(dbQueue)
 }

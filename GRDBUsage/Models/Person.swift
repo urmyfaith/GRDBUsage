@@ -32,13 +32,13 @@ class Person: Record {
     }
 
     override class func databaseTableName() -> String{
-        return "person"
+        return "persons"
     }
 
     override var persistentDictionary: [String: DatabaseValueConvertible?] {
         return [
             "id": id,
-            "fistName": firstName,
+            "firstName": firstName,
             "lastName": lastName]
     }
 

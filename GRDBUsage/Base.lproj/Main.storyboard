@@ -9,7 +9,7 @@
         <!--Main Table View Controller-->
         <scene sceneID="tRW-9c-plN">
             <objects>
-                <tableViewController id="p2d-4o-7jC" customClass="MainTableViewController" customModule="GRDBUsage" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Main" id="p2d-4o-7jC" customClass="MainTableViewController" customModule="GRDBUsage" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qHm-jE-IBN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Y3o-YB-f5t" kind="show" id="AWG-kU-8UD"/>
+                                    <segue destination="zF4-KH-am4" kind="show" identifier="Detail" id="AWG-kU-8UD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -40,7 +40,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mX2-TZ-1gl">
                             <connections>
-                                <segue destination="K3h-gs-nGb" kind="push" id="ZoF-WK-daJ"/>
+                                <segue destination="K3h-gs-nGb" kind="push" identifier="Add" id="wV4-Mp-9cd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -49,29 +49,10 @@
             </objects>
             <point key="canvasLocation" x="1507" y="212"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="dPe-6w-JJ7">
-            <objects>
-                <viewController id="Y3o-YB-f5t" customClass="DetailViewController" customModule="GRDBUsage" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SZX-4O-DfP"/>
-                        <viewControllerLayoutGuide type="bottom" id="RLV-nP-vUh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XJ2-3Q-SdI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9aM-kP-z7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1988" y="-123"/>
-        </scene>
         <!--Add View Controller-->
         <scene sceneID="mZq-gf-7Aa">
             <objects>
-                <tableViewController id="K3h-gs-nGb" customClass="AddViewController" customModule="GRDBUsage" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Add" id="K3h-gs-nGb" customClass="AddViewController" customModule="GRDBUsage" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bq8-ws-oXW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,6 +80,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="K3h-gs-nGb" id="Q8l-lW-zGt"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -129,6 +113,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="K3h-gs-nGb" id="7pT-Ua-1un"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -150,7 +137,7 @@
                     <navigationItem key="navigationItem" id="gpU-UW-gGL">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="bY1-KX-1k4">
                             <connections>
-                                <action selector="saveTap:" destination="K3h-gs-nGb" id="zRU-Ne-Snh"/>
+                                <segue destination="6wi-ko-ZVT" kind="unwind" unwindAction="addBack:" id="Oss-WC-nGV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -161,8 +148,9 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2g-x2-yfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6wi-ko-ZVT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="520"/>
+            <point key="canvasLocation" x="1988" y="687"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1IR-dL-6wU">
@@ -182,6 +170,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95e-Od-cte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="212"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="LJ9-W3-Dym">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Detail" storyboardName="Detail" referencedIdentifier="Detail" id="zF4-KH-am4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBh-Kp-vZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010" y="-129"/>
         </scene>
     </scenes>
 </document>
