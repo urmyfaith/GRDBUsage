@@ -18,6 +18,7 @@
 		FB41F5251C85811A004B0E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB41F5241C85811A004B0E94 /* Assets.xcassets */; };
 		FB41F5281C85811A004B0E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB41F5261C85811A004B0E94 /* LaunchScreen.storyboard */; };
 		FBED4A6F1C85AE9000D09AB3 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBED4A6D1C85AE9000D09AB3 /* Detail.storyboard */; };
+		FBED4A711C85B15D00D09AB3 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBED4A701C85B15D00D09AB3 /* Add.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FB41F5271C85811A004B0E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB41F5291C85811A004B0E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBED4A6E1C85AE9000D09AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		FBED4A701C85B15D00D09AB3 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				FB41F51D1C85811A004B0E94 /* AppDelegate.swift */,
 				FB41F5211C85811A004B0E94 /* Main.storyboard */,
+				FBED4A701C85B15D00D09AB3 /* Add.storyboard */,
 				FBED4A6D1C85AE9000D09AB3 /* Detail.storyboard */,
 				FB0C355C1C858E08004062BD /* ViewControllers */,
 				FB0C35591C858A84004062BD /* DB */,
@@ -198,6 +201,7 @@
 			files = (
 				FB41F5281C85811A004B0E94 /* LaunchScreen.storyboard in Resources */,
 				FB41F5251C85811A004B0E94 /* Assets.xcassets in Resources */,
+				FBED4A711C85B15D00D09AB3 /* Add.storyboard in Resources */,
 				FBED4A6F1C85AE9000D09AB3 /* Detail.storyboard in Resources */,
 				FB41F5231C85811A004B0E94 /* Main.storyboard in Resources */,
 			);

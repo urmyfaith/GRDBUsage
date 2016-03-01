@@ -34,9 +34,19 @@ class MainTableViewController: UITableViewController {
         return cell
     }
 
+    @IBAction func AddTap(sender: UIBarButtonItem) {
+
+        //方法一
+        // let sb = UIStoryboard(name: "Add", bundle: NSBundle.mainBundle())
+        // let addViewController = sb.instantiateViewControllerWithIdentifier("Add")
+        // self.navigationController?.pushViewController(addViewController, animated: true)
+
+        //方法二
+        performSegueWithIdentifier("Add", sender: self)
+    }
 
     @IBAction func EidtTap(sender: UIBarButtonItem) {
-            
+
     }
 
     @IBAction func addBack(segue: UIStoryboardSegue) {
