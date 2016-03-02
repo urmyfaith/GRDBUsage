@@ -23,11 +23,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tT-fL-phB">
+                                <rect key="frame" x="145" y="315" width="30" height="30"/>
+                                <state key="normal" title="edit"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0tT-fL-phB" firstAttribute="top" secondItem="fBs-r2-4hO" secondAttribute="bottom" constant="21" id="WRu-Qs-bpf"/>
                             <constraint firstItem="fBs-r2-4hO" firstAttribute="centerY" secondItem="XJ2-3Q-SdI" secondAttribute="centerY" id="ZJZ-NT-Uax"/>
                             <constraint firstItem="fBs-r2-4hO" firstAttribute="centerX" secondItem="XJ2-3Q-SdI" secondAttribute="centerX" id="hC4-Uc-VmT"/>
+                            <constraint firstItem="0tT-fL-phB" firstAttribute="trailing" secondItem="fBs-r2-4hO" secondAttribute="trailing" id="iRm-Hx-Sop"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

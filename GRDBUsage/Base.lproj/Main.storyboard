@@ -15,15 +15,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="kwn-0R-SQV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="kwn-0R-SQV">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kwn-0R-SQV" id="i4W-Ma-06j">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zF4-KH-am4" kind="show" identifier="Detail" id="AWG-kU-8UD"/>
+                                    <segue destination="zF4-KH-am4" kind="push" identifier="Detail" id="AWG-kU-8UD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -33,11 +33,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="EIy-c1-DhI">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Z6G-v9-c7U">
-                            <connections>
-                                <action selector="EidtTap:" destination="p2d-4o-7jC" id="6aU-xF-s00"/>
-                            </connections>
-                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="mX2-TZ-1gl">
                                 <connections>
@@ -78,7 +73,9 @@
         <!--Detail-->
         <scene sceneID="LJ9-W3-Dym">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Detail" storyboardName="Detail" referencedIdentifier="Detail" id="zF4-KH-am4" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Detail" storyboardName="Detail" referencedIdentifier="Detail" id="zF4-KH-am4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W7d-3b-nEg"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBh-Kp-vZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1988" y="127"/>

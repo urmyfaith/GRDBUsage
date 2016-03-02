@@ -15,6 +15,7 @@ class MainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -32,6 +33,19 @@ class MainTableViewController: UITableViewController {
         let person = persons[indexPath.row]
         cell.textLabel!.text = person.fullName
         return cell
+    }
+
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let person = persons[indexPath.row]
+            try! dbQueue.inTransaction { db in
+                try person.delete(db)
+                return .Commit
+            }
+            persons.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        }
+
     }
 
     @IBAction func AddTap(sender: UIBarButtonItem) {

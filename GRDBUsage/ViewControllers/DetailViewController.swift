@@ -32,4 +32,6 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         configView()
     }
+
+    
 }
