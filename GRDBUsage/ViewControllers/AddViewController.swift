@@ -17,8 +17,13 @@ class AddViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateTextFiled()
     }
 
+    func updateTextFiled() {
+        firstNameTextFiled.text = person.firstName
+        lastNameTextFiled.text = person.lastName
+    }
 
     func textFieldDidEndEditing(textField: UITextField) {
         if textField == firstNameTextFiled {

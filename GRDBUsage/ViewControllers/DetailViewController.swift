@@ -33,5 +33,12 @@ class DetailViewController: UIViewController {
         configView()
     }
 
-    
+
+    @IBAction func editTap(sender: UIButton) {
+        let sb = UIStoryboard(name: "Add", bundle: NSBundle.mainBundle())
+        let addViewController : AddViewController = sb.instantiateViewControllerWithIdentifier("Add") as! AddViewController
+        addViewController.person = self.person
+        self.navigationController?.pushViewController(addViewController, animated: true)
+    }
+
 }

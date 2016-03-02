@@ -26,6 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tT-fL-phB">
                                 <rect key="frame" x="145" y="315" width="30" height="30"/>
                                 <state key="normal" title="edit"/>
+                                <connections>
+                                    <action selector="editTap:" destination="Y3o-YB-f5t" eventType="touchUpInside" id="az2-KL-aVS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
